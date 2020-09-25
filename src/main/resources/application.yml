@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        exampleEventsSupplier-out-0:
+          destination: examples
+    function:
+      definition: exampleEventsSupplier
+
+server:
+  port: 8081
