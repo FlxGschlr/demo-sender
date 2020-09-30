@@ -27,7 +27,7 @@ repositories {
 
 dependencyManagement {
 	imports {
-		mavenBom("org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR6")
+		mavenBom("org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR8")
 	}
 }
 
