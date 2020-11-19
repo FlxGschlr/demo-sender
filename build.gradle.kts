@@ -44,7 +44,14 @@ dependencies {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
 	}
 	testImplementation("org.springframework.cloud:spring-cloud-contract-verifier")
-    testImplementation("org.springframework.cloud:spring-cloud-stream-test-support")
+	testImplementation("org.springframework.cloud:spring-cloud-stream") {
+		artifact {
+			name = "spring-cloud-stream"
+			extension = "jar"
+			type ="test-jar"
+			classifier = "test-binder"
+		}
+	}
 
 	testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 }
